@@ -73,6 +73,8 @@ public class AppointmentServiceImpl implements AppointmentService {
                     return a1.getAppointmentTime().compareTo(a2.getAppointmentTime());
                 }).toList();
 
+        // Sort by Date and Time in ascending order
+
         return filtered.stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
@@ -93,7 +95,7 @@ public class AppointmentServiceImpl implements AppointmentService {
                 appointment.getAppointmentTime().format(TIME_FORMATTER) : null;
 
         return new AppointmentDTO(
-                appointment.getId(),
+                appointment.getAppointmentId(),
                 dateStr,
                 timeStr,
                 patientDTO,

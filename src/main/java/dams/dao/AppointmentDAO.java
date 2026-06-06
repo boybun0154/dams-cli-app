@@ -27,7 +27,7 @@ public class AppointmentDAO {
     }
 
     public Optional<Appointment> findById(Long id) {
-        return appointments.stream().filter(a -> a.getId().equals(id)).findFirst();
+        return appointments.stream().filter(a -> a.getAppointmentId().equals(id)).findFirst();
     }
 
     public void save(Appointment appointment) {

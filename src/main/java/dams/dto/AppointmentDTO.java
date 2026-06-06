@@ -1,7 +1,7 @@
 package dams.dto;
 
 public record AppointmentDTO(
-    Long id,
+    Long appointmentId,
     String appointmentDate,
     String appointmentTime,
     PatientDTO patient,
