@@ -27,3 +27,9 @@ Alternatively, you can package the application into a runnable fat JAR and run i
 mvn clean package
 java -jar target/dams-cli-app-1.0-SNAPSHOT.jar
 ```
+
+## Docker
+
+You can find the official Docker image for this application on Docker Hub:
+[boybun0154/dams-cli-app on Docker Hub](https://hub.docker.com/repository/docker/boybun0154/dams-cli-app)
+
